@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CarRentEPAM</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>main_page</servlet-name>
+    <jsp-file>/WEB-INF/jsp/main_page.jsp</jsp-file>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>main_page</servlet-name>
+    <url-pattern>/main_page</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>authorization</servlet-name>
+    <jsp-file>/WEB-INF/jsp/authorization.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>authorization</servlet-name>
+    <url-pattern>/authorization</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>registration</servlet-name>
+    <jsp-file>/WEB-INF/jsp/registration.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>registration</servlet-name>
+    <url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>account_creating</servlet-name>
+    <jsp-file>/WEB-INF/jsp/creating_account.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>account_creating</servlet-name>
+    <url-pattern>/creating_account</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sign_in_administrator</servlet-name>
+    <jsp-file>/WEB-INF/jsp/sign_in_administrator.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>sign_in_administrator</servlet-name>
+    <url-pattern>/sign_in_administrator</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sign_in_landlord</servlet-name>
+    <jsp-file>/WEB-INF/jsp/sign_in_landlord.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>sign_in_landlord</servlet-name>
+    <url-pattern>/sign_in_landlord</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sign_in_renter</servlet-name>
+    <jsp-file>/WEB-INF/jsp/sign_in_renter.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>sign_in_renter</servlet-name>
+    <url-pattern>/sign_in_renter</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>by.epam.carrent.controller.Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+
+</web-app>
